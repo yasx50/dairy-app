@@ -3,10 +3,28 @@ import { useState } from 'react'
 
 const Product_items = (props) => {
 
+  // test
+ 
+
+  
+
   const  [first, setfirst] = useState(0)
   const incrementer =  ()=>{
     let a=first+1
     setfirst(a)
+
+  }
+  const decrementer =  ()=>{
+    if(first===0){
+      let b=first
+      setfirst(b)
+
+    }
+    else{
+      let a=first-1
+    setfirst(a)
+    }
+    
 
   }
   return (
@@ -16,12 +34,13 @@ const Product_items = (props) => {
 
       </div>
 
-      <h1 className='text-black bg-white text-center '> Fresh &nbsp; {props.animal} &nbsp;&nbsp;Milk <span className='ml-[9rem]'>{props.rate}₹&nbsp;&nbsp; Liter</span></h1>
+      <h1 className='text-black bg-white text-center '> {props.name} <span className='ml-[9rem]'>{props.rate}₹&nbsp;&nbsp;{props.liter_kg} </span></h1>
 
 <div className='flex justify-end '>
-  <div className='bg-blue-400 rounded-md m-4 w-[6rem] h-[2rem] inline-block text-center'>{first} liters </div>
-<button className='bg-blue-400 rounded-md m-4 w-[6rem] h-[2rem] inline-block' onClick={incrementer}>Add </button>
-<button className='bg-blue-400 rounded-md m-4 w-[6rem] h-[2rem] inline-block'>Add to Car</button>
+  <div className='bg-blue-400 rounded-md m-4 w-[6rem] h-[2rem] inline-block text-center'>{first} {} </div>
+<button className='bg-blue-400 rounded-md m-4 w-[3rem] h-[2rem] inline-block' onClick={incrementer}>+ </button>
+<button className='bg-blue-400 rounded-md m-4 ml-1 w-[3rem] h-[2rem] inline-block' onClick={decrementer}>- </button>
+<button className='bg-blue-400 rounded-md m-4 w-[6rem] h-[2rem] inline-block'>Add to Cart</button>
 </div>      
     </div>
   )
