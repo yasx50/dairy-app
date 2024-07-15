@@ -6,8 +6,8 @@ import { BrowserRouter as Router, Link } from "react-router-dom";
 export default function Headera() {
   return (
     <div>
-      <header className="flex bg-blue-400 h-[4rem] border-2">
-        <div className="mt-[10px] ml-[4rem] text-2xl">
+      <header className="flex bg-blue-400 h-[4rem] border-2 ">
+        <div className="mt-[10px] ml-[4rem] text-2xl border-1 w-[30rem]">
           <ul className="flex border-1 w-[35rem]">
             <li>
               <img
@@ -22,7 +22,7 @@ export default function Headera() {
           </ul>
         </div>
 
-        <nav className="flex justify-center mt-[10px] ml-[5rem] w-[44%] h-[2.5rem] border-1">
+        <nav className="flex  mt-[10px] mr-[20rem] w-[50%] h-[2.5rem] border-1">
           <ul className="flex gap-9 text-2xl items-center">
             <li className="flex items-center gap-2">
               <span className="material-symbols-outlined">home</span>
@@ -45,6 +45,11 @@ export default function Headera() {
               <span className="material-symbols-outlined">call</span>
               {/* <a href="contact.html">Contact</a> */}
               <Link to="/Contact">Contact</Link>
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="material-symbols-outlined">Person</span>
+              {/* <a href="contact.html">Contact</a> */}
+              <Link to="/Profile">Profile</Link>
             </li>
           </ul>
         </nav>
