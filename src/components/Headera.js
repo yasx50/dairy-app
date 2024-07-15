@@ -1,5 +1,7 @@
 import React from "react";
 import mahadev from "../images/mahadev-logo.jpg";
+import { BrowserRouter as Router, Link } from "react-router-dom";
+
 
 export default function Headera() {
   return (
@@ -20,25 +22,29 @@ export default function Headera() {
           </ul>
         </div>
 
-        <nav className="flex justify-center mt-[10px] ml-[8rem] w-[44%] h-[2.5rem] border-1">
+        <nav className="flex justify-center mt-[10px] ml-[5rem] w-[44%] h-[2.5rem] border-1">
           <ul className="flex gap-9 text-2xl items-center">
             <li className="flex items-center gap-2">
               <span className="material-symbols-outlined">home</span>
-              <a href="index.html">Home</a>
+              {/* <a href="index.html">Home</a> */}
+              <Link to="/">Home</Link>
             </li>
             <li className="flex items-center gap-2">
               <span className="material-symbols-outlined">inventory_2</span>
-              <a href="products.html">Products</a>
+              {/* <a href="products.html">Products</a> */}
+              <Link to="/Product">Products</Link>
             </li>
             <li className="flex items-center gap-2">
               <span className="material-symbols-outlined">
                 person_raised_hand
               </span>
-              <a href="services.html">Services</a>
+              {/* <a href="services.html">Services</a> */}
+              <Link to="/Service">Service</Link>
             </li>
             <li className="flex items-center gap-2">
               <span className="material-symbols-outlined">call</span>
-              <a href="contact.html">Contact</a>
+              {/* <a href="contact.html">Contact</a> */}
+              <Link to="/Contact">Contact</Link>
             </li>
           </ul>
         </nav>

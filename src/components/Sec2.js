@@ -2,10 +2,11 @@ import React from "react";
 
 export default function Sec2() {
   return (
-   <div>
-     <section className=" absolute mt-[40rem] p-2 w-full h-auto  bg-slate-600 text-white ">
+    <section className="mt-10 p-2 w-full h-auto bg-slate-600 text-white">
       <div>
-        <p className="text-4xl  mt-5 ml-20 "><b>Opening Hours</b></p>
+        <p className="text-4xl mt-5 ml-20">
+          <b>Opening Hours</b>
+        </p>
         <p className="mb-4 ml-20 my-10 text-xl">
           Welcome to Sobhnath Dairy Farm, your trusted source for fresh and
           high-quality dairy products. We are proud to serve you <b>24/7</b>,
@@ -20,7 +21,6 @@ export default function Sec2() {
           <li><strong>Morning:</strong> 6:00 AM - 9:00 AM</li>
           <li><strong>Evening:</strong> 5:00 PM - 9:00 PM</li>
         </ul>
-
         <p className="mb-4 ml-20 my-10 text-xl">
           During these times, you can experience our exceptional customer
           service, whether you're picking up fresh milk, delicious cheese, or
@@ -32,6 +32,5 @@ export default function Sec2() {
         </p>
       </div>
     </section>
-   </div>
   );
 }

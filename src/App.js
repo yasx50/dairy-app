@@ -1,22 +1,26 @@
-import './App.css';
-import Headera from './components/Headera';
-import Sec2 from './components/Sec2';
-import Sec1 from './components/Sec1'
-import Footer from './components/Footer'
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Link } from "react-router-dom";
+import "./App.css";
+import Home  from "./components/Home";
+import Product from "./components/Product";
+import Service from "./components/Service";
+import Contact from "./components/Contact";
 
 function App() {
   return (
-    <>
-    
-    <div>
-    <Headera/>
-    <Sec1/>
-    <Sec2/>
-    <Footer/>
-    </div>
-    
-    
-    </>
+    <Router>
+      <>
+        
+        <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Product" element={<Product  />} />
+        <Route path="/Service" element={<Service />} />
+        <Route path="/Contact" element={<Contact />} />
+
+        </Routes>
+      </>
+    </Router>
   );
 }
 
