@@ -20,7 +20,7 @@ const Product_items = (props) => {
       setfirst(b)
 
     }
-    else{
+    else{ 
       let a=first-1
     setfirst(a)
     }
@@ -28,7 +28,7 @@ const Product_items = (props) => {
 
   }
   return (
-    <div className='bg-slate-200 inline-block rounded-3xl w-[23rem] mt-[2rem] ml-[2.5rem] h-[rem] '>
+    <div className='bg-slate-200 inline-block rounded-3xl w-[23rem] mt-[2rem] ml-[4rem] h-[rem] '>
       <div className=''>
       <img className=' m-4    justify-center rounded-2xl max-w-[20rem] max-h-[11rem] mx-auto' src={props.image} alt=""/>
 

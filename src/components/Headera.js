@@ -49,7 +49,7 @@ export default function Headera() {
             <li className="flex items-center gap-2">
               <span className="material-symbols-outlined">Person</span>
               {/* <a href="contact.html">Contact</a> */}
-              <Link to="/Profile">Profile</Link>
+              <Link to="/Account">Account</Link>
             </li>
           </ul>
         </nav>

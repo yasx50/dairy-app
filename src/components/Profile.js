@@ -1,16 +1,34 @@
-import React from 'react'
-import Headera from './Headera'
-import Footer from './Footer'
+import React from "react";
+import user from "../images/user_icon.png";
 
-const Profile = () => {
+const Profile = (props) => {
   return (
     <div>
-        <Headera/>
-        this is profile page
-        <Footer/>
       
-    </div>
-  )
-}
+      <div className="h-[15rem] border-2 m-3 flex">
+        
+          <button className="bg-slate-500 h-[2rem] w-[7rem] ml-[89%] mt-[12rem] absolute">Edit</button>
+        <img
+          src={user}
+          className="border-black border-1 ml-[10rem]"
+          alt="user image"
+        />
 
-export default Profile
+
+        <div className="">
+          <div className="w-[50rem] h-[2rem] m-[2rem] border-black border-1 ">
+            Name : {props.name}
+          </div>
+          <div className="w-[50rem] h-[2rem] m-[2rem] border-black border-1 ">
+            Mobile Number : {props.number}{" "}
+          </div>
+          <div className="w-[50rem] h-[2rem] m-[2rem] border-black border-1 ">
+            Address : {props.address}{" "}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Profile;
