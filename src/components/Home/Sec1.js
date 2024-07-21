@@ -1,5 +1,5 @@
 import React from "react";
-import cow from "../images/cow.jpg";
+import cow from "../../images/cow.jpg";
 
 const Sec1 = () => {
   return (

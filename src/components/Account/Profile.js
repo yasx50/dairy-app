@@ -1,5 +1,5 @@
 import React from "react";
-import user from "../images/user_icon.png";
+import user from "../../images/user_icon.png";
 
 const Profile = (props) => {
   return (

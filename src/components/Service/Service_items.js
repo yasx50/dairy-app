@@ -1,6 +1,6 @@
 import React from "react";
-import milkman from "../images/Milkman.jpg";
-import gau from "../images/gau_shala.jpg";
+import milkman from "../../images/Milkman.jpg";
+import gau from "../../images/gau_shala.jpg";
 
 const Service_items = () => {
   return (

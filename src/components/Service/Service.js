@@ -1,7 +1,7 @@
 import React from 'react'
-import Headera from './Headera'
+import Headera from '../Headera'
 import Service_items  from './Service_items'
-import Footer from './Footer'
+import Footer from '../Footer'
 
 const Service = () => {
   return (

@@ -1,7 +1,7 @@
 import React from 'react'
-import Headera from './Headera';
+import Headera from '../Headera';
 import Accoun_items from './Account_items';
-import Footer from './Footer'
+import Footer from '../Footer'
 
 const Account = () => {
   return (

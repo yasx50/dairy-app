@@ -3,13 +3,15 @@ import { useState } from 'react'
 
 const Product_items = (props) => {
 
-  // test
+// test
  
 
   
-
+// here i have starte d the writing the code for increment and decrement function
   const  [first, setfirst] = useState(0)
-  const incrementer =  ()=>{
+  const [a, seta] = useState(0)
+  const incrementer =  ()=>{ 
+
     let a=first+1
     setfirst(a)
 
@@ -25,12 +27,15 @@ const Product_items = (props) => {
     setfirst(a)
     }
     
+  // here i have started the writing the code for add_cart function
+
+
 
   }
   return (
-    <div className='bg-slate-200 inline-block rounded-3xl w-[23rem] mt-[2rem] ml-[4rem] h-[rem] '>
+    <div className='bg-slate-200 inline-block rounded-3xl w-[23rem] mt-[2rem] ml-[2.5rem] h-[rem] '>
       <div className=''>
-      <img className=' m-4    justify-center rounded-2xl max-w-[20rem] max-h-[11rem] mx-auto' src={props.image} alt=""/>
+      <img className=' m-4    justify-center rounded-2xl max-w-[20rem] max-h-[11rem] mx-auto' src={props.image} alt=" "/>
 
       </div>
 
