@@ -7,12 +7,13 @@ import Product from "./components/Product/Product";
 import Service from "./components/Service/Service";
 // import Contact from "./components/Contact";
 import Account from "./components/Account/Account";
+import CartProvider from "./context/CartProvider";
 
 function App() {
   return (
     <Router>
       <>
-        
+       
         <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Product" element={<Product  />} />
@@ -21,6 +22,7 @@ function App() {
         <Route path="/Account" element={<Account />} />
 
         </Routes>
+      
       </>
     </Router>
   );

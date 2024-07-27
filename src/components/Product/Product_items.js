@@ -1,5 +1,7 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState,useContext } from 'react'
+import Cart from '../../context/Cart'
+
 
 const Product_items = (props) => {
 
@@ -9,7 +11,9 @@ const Product_items = (props) => {
   
 // here i have starte d the writing the code for increment and decrement function
   const  [first, setfirst] = useState(0)
-  const [a, seta] = useState(0)
+  // const [name, setName] = useState('')
+  const {setItems} = useContext(Cart)
+ 
   const incrementer =  ()=>{ 
 
     let a=first+1
@@ -26,13 +30,20 @@ const Product_items = (props) => {
       let a=first-1
     setfirst(a)
     }
-    
-  // here i have started the writing the code for add_cart function
-
-
+  }
+  const addTocart = ()=>{
+    setItems({
+      name: props.name,
+      rate: props.rate,
+      image: props.image,
+      liter_kg:first,
+    })
 
   }
   return (
+    
+   
+       
     <div className='bg-slate-200 inline-block rounded-3xl w-[23rem] mt-[2rem] ml-[2.5rem] h-[rem] '>
       <div className=''>
       <img className=' m-4    justify-center rounded-2xl max-w-[20rem] max-h-[11rem] mx-auto' src={props.image} alt=" "/>
@@ -45,9 +56,12 @@ const Product_items = (props) => {
   <div className='bg-blue-400 rounded-md m-4 w-[6rem] h-[2rem] inline-block text-center'>{first} {} </div>
 <button className='bg-blue-400 rounded-md m-4 w-[3rem] h-[2rem] inline-block' onClick={incrementer}>+ </button>
 <button className='bg-blue-400 rounded-md m-4 ml-1 w-[3rem] h-[2rem] inline-block' onClick={decrementer}>- </button>
-<button className='bg-blue-400 rounded-md m-4 w-[6rem] h-[2rem] inline-block'>Add to Cart</button>
+<button className='bg-blue-400 rounded-md m-4 w-[6rem] h-[2rem] inline-block' onClick={addTocart}>Add to Cart</button>
 </div>      
     </div>
+    
+  
+  
   )
 }
 
